@@ -1,6 +1,6 @@
 baseURL: http://example.org/
 languageCode: en-us
-title: Mind Paths
+title: MindPaths
 
 markup:
   goldmark:
@@ -8,5 +8,4 @@ markup:
       unsafe: true
 
 params:
-  slogan: "Super fast!"
 

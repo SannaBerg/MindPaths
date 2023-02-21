@@ -6,13 +6,10 @@
         <div class="col">
             <div class="text-center">
                 <h1>{{ .Site.Title }}</h1>
-                <!-- Fetched param from page data. -->
-                {{ with .Params.subtitle }}
-                <h2 class="text-secondary h3">{{ . }}</h2>
-                {{ end }}
             </div>
+            <div class="text-center">
             {{ .Content }}
-            <a class="btn btn-primary" href="a" role="button">Link</a>
+            </div>
         </div>
     </div>
 </div> 
