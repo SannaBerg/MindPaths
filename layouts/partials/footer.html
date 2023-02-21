@@ -1,0 +1,12 @@
+<div class="container-fluid bg-dark">
+    <div class="row">
+        <div class="col p-2 text-light">
+            <small>&copy; <span id="js-year"></span><noscript>{{ now.Format "2006" }}</noscript> - {{ .Site.Title }}</small> 
+        </div>
+    </div>
+</div>
+
+<!-- JavaScript to get the year. -->
+<script>
+    document.getElementById("js-year").innerHTML = new Date().getFullYear();
+</script>

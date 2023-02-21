@@ -1,0 +1,19 @@
+
+{{ define "main" }}
+<!-- Defines content that fills in main in the main block in the baseof.html layout. Template for top _index.md file. -->
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <div class="text-center">
+                <h1>{{ .Site.Title }}</h1>
+                <!-- Fetched param from page data. -->
+                {{ with .Params.subtitle }}
+                <h2 class="text-secondary h3">{{ . }}</h2>
+                {{ end }}
+            </div>
+            {{ .Content }}
+            <a class="btn btn-primary" href="a" role="button">Link</a>
+        </div>
+    </div>
+</div> 
+{{ end }}

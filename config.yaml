@@ -1,0 +1,12 @@
+baseURL: http://example.org/
+languageCode: en-us
+title: Mind Paths
+
+markup:
+  goldmark:
+    renderer: 
+      unsafe: true
+
+params:
+  slogan: "Super fast!"
+

@@ -1,0 +1,14 @@
+{{ define "main" }}
+<!-- Defines content that fills in main in the main block in the baseof.html layout. Template for index.md files. 
+    Will be used by any page that is not a list. -->
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h1>{{ .Site.Title }}</h1>
+            <h2 class="text-secondary h3">{{ .Params.subtitle }}</h2>
+            
+            {{ .Content }}
+        </div>
+    </div>
+</div> 
+{{ end }}
